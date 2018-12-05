@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # Slurp variables defined env files
 gem 'dotenv-rails', '~> 2.5'
 
+gem "browser"
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

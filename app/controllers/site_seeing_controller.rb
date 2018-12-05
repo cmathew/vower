@@ -1,0 +1,2 @@
+class SiteSeeingController < ApplicationController
+end
