@@ -1,0 +1,2 @@
+class SightSeeingController < ApplicationController
+end

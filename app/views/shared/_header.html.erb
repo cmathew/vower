@@ -14,25 +14,33 @@
 	  			<div class="grid_12">
 					<nav>
 		  				<ul class="menu">
-							<li><a href="index.html">Home</a></li>
+							<li>
+								<%= link_to('Home', home_path) %>
+							</li>
 							<li>
 								<a href="#">Wedding</a>
 								<div class="menu-drop-down">
-									<a href="wedding.html">The Wedding</a>
-									<a href="otherEvents.html">Other Events</a>
+									<%= link_to('The Wedding', wedding_path) %>
+									<%= link_to('Other Events', other_events_path) %>
 								</div>
 							</li>
 							<li>
 								<a href="#">Details</a>
 								<div class="menu-drop-down">
-									<a href="accommodations.html">Accommodations</a>
-									<a href="travel.html">Travel</a>
-									<a href="siteSeeing.html">Site Seeing</a>
+									<%= link_to('Accommodations', accommodations_path) %>
+									<%= link_to('Travel', travel_path) %>
+									<%= link_to('Sight-Seeing', sight_seeing_path) %>
 								</div>
 							</li>
-							<li><a href="photos.html">Photos</a></li>
-							<li><a href="registry.html">Registry</a></li>
-							<li><a href="rsvp.html">RSVP</a></li>
+							<li>
+								<%= link_to('Photos', photos_path) %>
+							</li>
+							<li>
+								<%= link_to('Registry', registry_path) %>
+							</li>
+							<li>	
+								<%= link_to('RSVP', rsvp_path) %>								
+							</li>
 		 				</ul>
 					</nav>
 	  			</div>
