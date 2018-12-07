@@ -1,51 +1,47 @@
-<!doctype html><head>
-	<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
-</head>
-
 <div class="main">
-	<h1> <a href="index.html">Samantha Nano & Chris Mathew</a></h1>
+	<h1> 
+		<%= link_to('Samantha Nano & Chris Mathew', home_path) %>
+	</h1>
 
-<div class="menu-row">
-	<div class="main">
-  		<div class="container_12">
-			<div class="wrapper">
-	  			<div class="grid_12">
-					<nav>
-		  				<ul class="menu">
-							<li>
-								<%= link_to('Home', home_path) %>
-							</li>
-							<li>
-								<a href="#">Wedding</a>
-								<div class="menu-drop-down">
-									<%= link_to('The Wedding', wedding_path) %>
-									<%= link_to('Other Events', other_events_path) %>
-								</div>
-							</li>
-							<li>
-								<a href="#">Details</a>
-								<div class="menu-drop-down">
-									<%= link_to('Accommodations', accommodations_path) %>
-									<%= link_to('Travel', travel_path) %>
-									<%= link_to('Sight-Seeing', sight_seeing_path) %>
-								</div>
-							</li>
-							<li>
-								<%= link_to('Photos', photos_path) %>
-							</li>
-							<li>
-								<%= link_to('Registry', registry_path) %>
-							</li>
-							<li>	
-								<%= link_to('RSVP', rsvp_path) %>								
-							</li>
-		 				</ul>
-					</nav>
-	  			</div>
+	<div class="menu-row">
+		<div class="main">
+			<div class="container_12">
+				<div class="wrapper">
+					<div class="grid_12">
+						<nav>
+							<ul class="menu">
+								<li>
+									<%= link_to('Home', home_path) %>
+								</li>
+								<li>
+									<a href="#">Wedding</a>
+									<div class="menu-drop-down">
+										<%= link_to('The Wedding', wedding_path) %>
+										<%= link_to('Other Events', other_events_path) %>
+									</div>
+								</li>
+								<li>
+									<a href="#">Details</a>
+									<div class="menu-drop-down">
+										<%= link_to('Accommodations', accommodations_path) %>
+										<%= link_to('Travel', travel_path) %>
+										<%= link_to('Sight-Seeing', sight_seeing_path) %>
+									</div>
+								</li>
+								<li>
+									<%= link_to('Photos', photos_path) %>
+								</li>
+								<li>
+									<%= link_to('Registry', registry_path) %>
+								</li>
+								<li>	
+									<%= link_to('RSVP', rsvp_path) %>								
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
-  		</div>
+		</div>
 	</div>
-</div>
 </div>

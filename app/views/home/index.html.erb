@@ -1,14 +1,45 @@
-<div class="coming-soon main">
-	<div class="coming-soon-title">
-		Coming Soon!
-	</div>
-	<div class="coming-soon-detail">
-		Check back later for more information.
-	</div>
-</div>
-	
+<% content_for(:head) do %>
+	<%= javascript_include_tag('home') %>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet" type="text/css">
+<% end %>
+
+<section id="content">
+  <div class="main">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <ul class="items">
+					<li> 
+						<%= image_tag('slider-img1') %>
+					</li>
+					<li> 
+						<%= image_tag('slider-img2') %>		
+					<li> 
+						<%= image_tag('slider-img3') %>
+					</li>
+      	</ul>
+      </div>
+    </div>
+    <div class='date-location-info'>
+    	<div class="date-info">September 1, 2019</div>
+    	<div class="location-info-line1">The Mountain Terrace</div>
+    	<div class="location-info-line-2">Woodside, CA</div>
+    </div>
+  </div>
+</section>
+
 <script>
-$(function(){
-	$("header").load("header.html");  
-});
+	$(window).load(function () {
+		$('.slider')._TMS({
+			duration: 1000,
+			easing: 'easeOutQuint',
+			preset: 'slideDown',
+			slideshow: 7000,
+			banners: false,
+			pauseOnHover: true,
+			pagination: true,
+			pagNums: false
+		});
+	});
 </script>
