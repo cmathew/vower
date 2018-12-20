@@ -10,31 +10,31 @@
 					<div class="grid_12">
 						<nav>
 							<ul class="menu">
-								<li>
+								<li <%='class=activeTab' if @activeTab == 'home' %>>
 									<%= link_to('Home', home_path) %>
 								</li>
-								<li>
-									<a href="#">Wedding</a>
+								<li <%='class=activeTab' if @activeTab == 'wedding' %>>
+									<a>Wedding</a>
 									<div class="menu-drop-down">
 										<%= link_to('The Wedding', wedding_path) %>
 										<%= link_to('Other Events', other_events_path) %>
 									</div>
 								</li>
-								<li>
-									<a href="#">Details</a>
+								<li <%='class=activeTab' if @activeTab == 'details' %>>
+									<a>Details</a>
 									<div class="menu-drop-down">
 										<%= link_to('Accommodations', accommodations_path) %>
 										<%= link_to('Travel', travel_path) %>
 										<%= link_to('Sight-Seeing', sight_seeing_path) %>
 									</div>
 								</li>
-								<li>
+								<li <%='class=activeTab' if @activeTab == 'photos' %>>
 									<%= link_to('Photos', photos_path) %>
 								</li>
-								<li>
+								<li <%='class=activeTab' if @activeTab == 'registry' %>>
 									<%= link_to('Registry', registry_path) %>
 								</li>
-								<li>	
+								<li <%='class=activeTab' if @activeTab == 'rsvp' %>>	
 									<%= link_to('RSVP', rsvp_path) %>								
 								</li>
 							</ul>

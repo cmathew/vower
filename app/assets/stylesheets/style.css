@@ -212,7 +212,12 @@ h1 a {
 	color:#fefce2;
 	text-transform:uppercase;
 }
-.menu li a.active, .menu > li > a:hover {
+
+.menu li.activeTab a {
+	color:#faf380;
+}
+
+.menu > li > a:hover {
 	color:#faf380;
 }
 
@@ -228,13 +233,14 @@ h1 a {
 .menu li .menu-drop-down a {
     display: block;
 	padding: 0 10px;
+	color:#fefce2;
 }
 
 .menu > li:hover .menu-drop-down {
     display: block;
 }
 
-.menu-drop-down a:hover {
+.menu li .menu-drop-down a:hover {
     display: block;
 	color:#faf380;
 }
