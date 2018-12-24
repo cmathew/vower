@@ -6,7 +6,7 @@ class CreateInvitationResponses < ActiveRecord::Migration[5.2]
 
     create_table :invitee do |t|
       t.string :name, null: false
-      t.integer :type, null: false
+      t.integer :age_type, null: false
       t.integer :meal_choice, null: false 
       t.boolean :is_attending, null: false
       t.timestamps
