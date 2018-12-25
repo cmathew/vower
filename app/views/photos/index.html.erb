@@ -1,0 +1,10 @@
+
+<div class="photos-grid-wrapper">
+	<div class="photos-grid">
+		<% @photosArray.each do |photo| %>
+		<div class="photos-grid-photo-wrapper">
+			<%= image_tag("other-photos/#{photo}", class: "photos-grid-photo")%>
+		</div>
+		<% end %>
+	</div>
+</div>
