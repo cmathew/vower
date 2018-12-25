@@ -1,6 +1,8 @@
 class PhotosController < ApplicationController
 	def index
 		@activeTab="photos"
-		@photosArray=Dir.glob('app/assets/images/other-photos/photo*.jpeg').sort.map{ |path| path.split('/').last }
+		photosFolder="other-photos"
+		@photosFolder=photosFolder
+		@photosArray=Dir.glob('app/assets/images/'+photosFolder+'/photo*.jpeg').sort.map{ |path| path.split('/').last }
 	end
 end
