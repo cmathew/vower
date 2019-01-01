@@ -7,7 +7,9 @@
 	<div class="photos-grid">
 		<% @photosArray.each_index do |photoIndex| %>
 		<div class="photos-grid-photo-wrapper">
-			<%= image_tag("#{@photosFolder}/#{@photosArray[photoIndex]}", class: "photos-grid-photo", onclick: "onImageClick(#{photoIndex})") %>
+			<a href="<%= image_path("#{@photosFolder}/#{@photosArray[photoIndex]}")%>" data-lightbox="photos-lightbox">
+				<%= image_tag("#{@photosFolder}/#{@photosArray[photoIndex]}", class: "photos-grid-photo", onclick: "onImageClick(#{photoIndex})") %>
+			</a>
 		</div>
 		<% end %>
 	</div>
