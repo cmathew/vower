@@ -1,3 +1,7 @@
+<% content_for(:head) do %>
+	<%= javascript_include_tag('photos') %>
+	<%= stylesheet_link_tag('photos', media: 'all', 'data-turbolinks-track': 'reload') %>
+<% end %>
 
 <div class="photos-grid-wrapper">
 	<div class="photos-grid">
