@@ -1,0 +1,15 @@
+<% content_for(:head) do %>
+	<%= javascript_include_tag('photos') %>
+	<%= stylesheet_link_tag('photos', media: 'all', 'data-turbolinks-track': 'reload') %>
+<% end %>
+
+<div class="photos-grid-wrapper">
+	<div class="photos-grid">
+		<% @photosArray.each_index do |photoIndex| %>
+			<% photoLoc="#{@photosFolder}/#{@photosArray[photoIndex]}" %>
+			<a href="<%= image_path(photoLoc)%>" data-lightbox="photos-lightbox" class="photos-grid-photo-wrapper" >
+				<%= image_tag(photoLoc, class: "photos-grid-photo") %>
+			</a>
+		<% end %>
+	</div>
+</div>
