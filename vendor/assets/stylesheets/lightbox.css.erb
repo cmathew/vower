@@ -184,9 +184,13 @@ html.lb-disable-scrolling {
   color: #999999;
 }
 
-.lb-data .lb-close {
+.lb-closeContainer {
+  margin: 0 auto;
+  height: 30px;
+}
+
+.lb-close {
   display: block;
-  float: right;
   width: 30px;
   height: 30px;
   background: url(<%= image_path("close.png") %>) top right no-repeat;
@@ -198,6 +202,8 @@ html.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .lb-data .lb-close:hover {
