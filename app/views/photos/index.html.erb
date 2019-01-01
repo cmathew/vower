@@ -6,19 +6,10 @@
 <div class="photos-grid-wrapper">
 	<div class="photos-grid">
 		<% @photosArray.each_index do |photoIndex| %>
-		<div class="photos-grid-photo-wrapper">
-			<a href="<%= image_path("#{@photosFolder}/#{@photosArray[photoIndex]}")%>" data-lightbox="photos-lightbox">
-				<%= image_tag("#{@photosFolder}/#{@photosArray[photoIndex]}", class: "photos-grid-photo", onclick: "onImageClick(#{photoIndex})") %>
+			<% photoLoc="#{@photosFolder}/#{@photosArray[photoIndex]}" %>
+			<a href="<%= image_path(photoLoc)%>" data-lightbox="photos-lightbox" class="photos-grid-photo-wrapper" >
+				<%= image_tag(photoLoc, class: "photos-grid-photo") %>
 			</a>
-		</div>
 		<% end %>
 	</div>
 </div>
-
-<script type="text/javascript">
-
-function onImageClick(index) {
-	console.log("hello world");
-}
-
-</script>
