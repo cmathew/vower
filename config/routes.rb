@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/registry', to: 'registry#index'
   get '/rsvp', to: 'rsvp#index'
   get '/health_check', to: 'health_check#index'
+  get '/sightseeing_sf_public_transit', to:'sightseeing_sf_public_transit#index'
 end
