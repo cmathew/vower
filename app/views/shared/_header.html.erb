@@ -30,7 +30,11 @@
 									</div>
 								</li>
 								<li <%='class=activeTab' if @activeTab == 'photos' %>>
-									<%= link_to('Photos', photos_path) %>
+									<a>Photos</a>
+									<div class="menu-drop-down">
+										<%= link_to('Engagement Photos', engagement_photos_path) %>
+										<%= link_to('Other Photos', photos_path) %>
+									</div>
 								</li>
 								<li <%='class=activeTab' if @activeTab == 'registry' %>>
 									<%= link_to('Registry', registry_path) %>
