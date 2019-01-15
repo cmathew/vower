@@ -9,16 +9,6 @@
   <div class="main">
     <div class="slider-wrapper">
       <div class="slider">
-        <ul class="items">
-					<li> 
-						<%= image_tag('home-slider/slider-img1') %>
-					</li>
-					<li> 
-						<%= image_tag('home-slider/slider-img2') %>		
-					<li> 
-						<%= image_tag('home-slider/slider-img3') %>
-					</li>
-      	</ul>
       </div>
     </div>
     <div class='date-location-info'>
@@ -29,7 +19,7 @@
   </div>
 </section>
 
-<script>
+<script>	
 	$(document).ready(function () {
 		$('.slider')._TMS({
 			duration: 1000,
@@ -39,7 +29,8 @@
 			banners: false,
 			pauseOnHover: true,
 			pagination: true,
-			pagNums: false
+			pagNums: false,
+			itms: <%= slider_arr(@imageArr) %>
 		});
 	});
 </script>

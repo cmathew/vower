@@ -10,7 +10,6 @@
 		
 	$.extend(_TMS,{
 		etal:'<div></div>',
-		items:'.items>li',
 		pic:'pic',
 		mask:'mask',
 		paginationCl:'pagination',
@@ -37,6 +36,7 @@
 		nextBu:false,
 		prevBu:false,
 		playBu:false,
+		itms:[],
 		preFu:function(){
 			var _=this,
 				img=$(new Image())
@@ -55,8 +55,6 @@
 				
 			_.me.css({overflow:_.overflow})
 			
-			if(_.items)
-				_.parseImgFu()
 			img
 				.appendTo(_.me)
 				.load(function(){
@@ -226,15 +224,6 @@
 		},
 		bannerShow:function(){},
 		bannerHide:function(){},
-		parseImgFu:function(){
-			var _=this
-			_.itms=[]
-			$(_.items+' img',_.me)
-				.each(function(i){
-					_.itms[i]=$(this).attr('src')
-				})
-			$(_.items,_.me).hide()
-		},
 		controlsFu:function(){
 			var _=this
 			if(_.nextBu)
