@@ -19,11 +19,9 @@
     <div class="photos-grid-wrapper">
       <div class="photos-grid main-content-wrapper">
         <% photosArray=Dir.glob('app/assets/images/'+@photosFolder+'/photo*.jpg').sort.map{ |path| path.split('/').last }%>
-        <% (photosArray.size / 2).times do |photo_index| %>
-          <% photoLoc="#{@photosFolder}/#{photosArray[photo_index * 2]}" %>
-          <% thumbnailLoc="#{@photosFolder}/#{photosArray[(photo_index * 2) + 1]}" %>
-          <a href="<%= image_path(thumbnailLoc)%>" data-lightbox="photos-lightbox" class="photos-grid-photo-wrapper" >
-            <%= image_tag(photoLoc, class: "photos-grid-photo") %>
+        <% photosArray.each_index do |photoIndex| %>
+          <a href="<%= image_path("#{@photosFolder}/#{photosArray[photoIndex]}")%>" data-lightbox="photos-lightbox" class="photos-grid-photo-wrapper" >
+            <%= image_tag("#{@photosFolder}-thumbnail/#{photosArray[photoIndex]}", class: "photos-grid-photo") %>
           </a>
         <% end %>
       </div>
