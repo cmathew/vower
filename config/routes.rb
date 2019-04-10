@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/health_check', to: 'health_check#index'
   get '/sightseeing_sf_public_transit', to:'sightseeing_sf_public_transit#index'
   get '/engagement_photos', to:'engagement_photos#index'
+  get '/ground_transportation_sfo', to:'ground_transportation_sfo#index'
+  get '/ground_transportation_sjc', to:'ground_transportation_sjc#index'
 end
