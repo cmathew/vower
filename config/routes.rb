@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '/', to: 'home#index'
   get '/home', to: 'home#index'
   get '/wedding', to: 'wedding#index'
+  get '/transportation', to: 'transportation#index'
   get '/accommodations', to: 'accommodations#index'
   get '/sight_seeing', to: 'sight_seeing#index'
   get '/other_events', to: 'other_events#index'

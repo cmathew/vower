@@ -1,5 +1,5 @@
 class AccommodationsController < ApplicationController
 	def index
-		@activeTab="details"
+		@activeTab="visit"
 	end
 end

@@ -1,5 +1,5 @@
 class TravelController < ApplicationController
 	def index
-		@activeTab="details"
+		@activeTab="visit"
 	end
 end

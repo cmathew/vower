@@ -14,15 +14,14 @@
 									<%= link_to('Home', home_path) %>
 								</li>
 								<li <%='class=activeTab' if @activeTab == 'wedding' %>>
-									<!--<a>Wedding</a>
+									<a>Wedding</a>
 									<div class="menu-drop-down">
-										<%= link_to('The Wedding', wedding_path) %>
-										<%= link_to('Other Events', other_events_path) %>
-									</div>-->
-									<%= link_to('Wedding', wedding_path) %>
+										<%= link_to('Details', wedding_path) %>
+										<%= link_to('Transportation', transportation_path) %>							
+									</div>
 								</li>
-								<li <%='class=activeTab' if @activeTab == 'details' %>>
-									<a>Details</a>
+								<li <%='class=activeTab' if @activeTab == 'visit' %>>
+									<a>Visit</a>
 									<div class="menu-drop-down">
 										<%= link_to('Accommodations', accommodations_path) %>
 										<%= link_to('Travel', travel_path) %>
