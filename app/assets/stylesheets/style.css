@@ -134,11 +134,6 @@ p {
 	margin: auto;
 }
 
-.content-title {
-	font-family: 'Gluthen Bloots';
-    padding: 30px 0px;
-}
-
 .content-primary-details {
 	font-family: 'Gluthen Bloots';
 }
@@ -369,25 +364,6 @@ h2 {
 	font-size: 25px;
 }
 
-/***** coming soon *****/
-.coming-soon {
-	color: #1b1b68;
-	width: 100%;
-	text-align: center;
-	padding-top: 100px;
-	min-width: auto;
-}
-
-.coming-soon-title {
-	font-family: 'Gluthen Bloots';
-	font-size: 120px;
-}
-
-.coming-soon-detail {
-	font-family: 'Josefin Sans';
-	font-size: 35px;
-}
-
 /****************************photos************************/
 
 .photos-grid-wrapper {
@@ -484,6 +460,28 @@ h2 {
 
 .transportation-title {
 	text-align: left;
+}
+
+/****************************other events************************/
+.timeline-event {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.timeline-event-title {
+	text-transform: uppercase;
+}
+
+.timeline-event-location {
+	font-style: italic;
+}
+
+.timeline-day-title {
+	text-align: left;
+}
+
+.day-timeline-content {
+	padding-left: 50px;
 }
 
 /****************************footer************************/
