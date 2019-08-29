@@ -1,5 +1,5 @@
 class SightSeeingController < ApplicationController
 	def index
-		@activeTab="details"
+		@activeTab="visit"
 	end
 end
